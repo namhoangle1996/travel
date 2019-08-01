@@ -33,15 +33,22 @@ small {
 }
 .font-bold {
   font-weight: bold;
+	color : #000000bf;
 }
 input[type="text"] {
       padding: 6px;
       width: 290px;
+			font-size: 17px;
+			border: 0;
+			background: #bdbdbd47;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #00000096;
+  opacity: 1; /* Firefox */
 }
 .submit {
       padding: 6px;
       margin-top: 8px;
-      margin-right: 16px;
       background: #d24d4d;
       font-size: 17px;
       border: none;
@@ -49,8 +56,16 @@ input[type="text"] {
       color: white;
       text-transform: uppercase;
 }
+.submit:hover {
+	background: #e94040;
+	transition: all ease-out 0.3s;
+}
 .copy-right{
-  margin-top: 60px;
+    margin-top: 60px;
+		width: 100%;
+  	display: inline-block;
+    background: #ededed;
+    padding: 20px 0px;
 }
 .copy-right--text {
   float: left;
@@ -60,6 +75,8 @@ text-align: center;
 text-decoration: none;
 font-size: 17px;
 color: #00000096;
+padding-left: 10px;
+
 }
 .navigation > a {
   padding: 0px 8px;
@@ -74,6 +91,9 @@ color: #00000096;
   letter-spacing: 4.2px;
     line-height: 110%;
     margin: 2.8rem 0 1.68rem 0;
+}
+.navigation.right {
+	padding-right: 10px;
 }
 .right {
   float: right;
