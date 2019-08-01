@@ -1,11 +1,36 @@
 @media screen and (max-width: 900px) {
+  .header .navbar-top {
+    padding: 0px 20px;
+  }
+  .box.body .title {
+    padding: 0px 20px;
+  }
+  .box.body .card-child {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .box.body .card-child {
+    width: 90%;
+    margin: 0 auto;
+  }
+  section.before-u-leave {
+    padding: 0px 20px;
+  }
   .copy-right--text {
-       padding: 0px 5px 0px 5px;
-       float: none;
-       margin-bottom: 15px;
+    padding: 15px 20px 0px 20px;
+    float: none;
+    line-height: 1.2;
+    text-align: left;
   }
   .navigation.right {
+    padding: 10px 20px 10px 20px;
     float: none;
-    text-align: center;
+    line-height: 1.2;
+    text-align: left;
+  }
+  .navigation >a {
+    display: block;
+    padding: 0;
+    margin-bottom: 7px;
   }
 }

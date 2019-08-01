@@ -1,6 +1,9 @@
 
 body {
-	line-height: 1;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
   color: rgba(0,0,0,0.87);
 }
 a {
@@ -9,6 +12,36 @@ a {
 
 
 /*end reset css */
+.header {
+  padding-top: 28px;
+  height: 600px;
+  background: url('./img/bg-header.jpg');
+  background-size: cover;
+  background-position: center center; 
+}
+.header .navbar-top {
+  max-width: 1170px;
+  margin: 0 auto ;
+}
+.header .nav-left{
+  float: left;
+  font-family: 'Open Sans', sans-serif;
+    font-size: 32px;
+    color: #f4f3ee;
+}
+.header .nav-right {
+  float: right;
+  font-size: 32px;
+  color: #f4f3ee;
+}
+.header .header-title {
+   letter-spacing: 2px;
+  color: #f4f3ee;
+  font-size: 52px;
+  font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    margin-top: 220px;
+}
 .container {
     margin: 0 auto;
     max-width: 1280px;
@@ -22,8 +55,9 @@ a {
 .margin-bt-20{
   margin-bottom: 20px;
 }
-small {
-  color: #00000096;
+footer-detail{
+  color: #8b8b8b;
+  font-size: 15px;
 }
 .text-center {
   text-align: center;
@@ -31,16 +65,33 @@ small {
 .pd-t-40 {
   padding-top: 40px;
 }
+.wp-inner {
+  max-width: 1170px;
+  margin: 0 auto ;
+}
+.wp-inner .title .big-title {
+  color: #323232;
+  font-size: 15px;
+}
+.wp-inner .title .descrip {
+  margin-bottom: 38px;
+}
 .font-bold {
   font-weight: bold;
 	color : #000000bf;
 }
+section.box {
+  background: #eeeeee;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 input[type="text"] {
-      padding: 6px;
-      width: 290px;
-			font-size: 17px;
-			border: 0;
-			background: #bdbdbd47;
+  padding-left: 6px;
+  width: 290px;
+  font-size: 17px;
+  border: 0;
+  height: 40px;
+  background: #bdbdbd47;
 }
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #00000096;
@@ -53,7 +104,10 @@ input[type="text"] {
       font-size: 17px;
       border: none;
       cursor: pointer;
+      width: 150px;
+      height: 40px;
       color: white;
+      font-family: 'Open Sans', sans-serif;
       text-transform: uppercase;
 }
 .submit:hover {
@@ -61,11 +115,17 @@ input[type="text"] {
 	transition: all ease-out 0.3s;
 }
 .copy-right{
-    margin-top: 60px;
-		width: 100%;
-  	display: inline-block;
-    background: #ededed;
-    padding: 20px 0px;
+  margin-top: 60px;
+  max-width: 1170px;
+  margin: 0 auto ;
+  background: #ededed;
+
+}
+
+.wp-inner {
+  max-width: 1170px;
+  margin: 0 auto;
+
 }
 .copy-right--text {
   float: left;
@@ -80,21 +140,65 @@ padding-left: 10px;
 }
 .navigation > a {
   padding: 0px 8px;
-  color: rgba(0,0,0,0.87);
+  color: #323232;
+  font-size: 14px;
 }
 .flex {
   display: flex;
   justify-content: space-between;
 }
+.bg-white {
+  background: white !important;
+}
 .bf-leave {
   font-size: 2.2rem;
   letter-spacing: 4.2px;
     line-height: 110%;
-    margin: 2.8rem 0 1.68rem 0;
+    margin: 2.8rem 0 50px 0;
 }
 .navigation.right {
 	padding-right: 10px;
 }
 .right {
   float: right;
+}
+
+.card .card-img {
+  background: url('./img/1.jpg');
+  background-size: cover;
+background-position: center center;
+  height: 200px;
+  position: relative;
+}
+.card .card-img .card--price {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  font-size: 12px;
+  color: white;
+  font-weight: 500;
+}
+.card .card--info {
+  background: white;
+  padding: 20px ;
+}
+.card .card--info .card--place {
+  font-size: 14px;
+  color: #323232;
+}
+.card .card--info .card--detail {
+  font-size: 13px;
+  color: #696969;
+}
+footer {
+  margin-top: 80px;
+  height: 74px;
+  line-height: 74px;
+  background: #eeeeee;
+}
+
+.grid-4 {
+   display: grid;
+   grid-template-columns: repeat( auto-fit, minmax(240px, 1fr) );
+   grid-gap: 12px;
 }
